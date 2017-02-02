@@ -2,6 +2,13 @@ import domElements from './utils/domElements'
 import ClassedFactory from './ClassedFactory'
 
 
+// classed.div`
+//   hello ${props => props.needsDefault}
+//   hello2
+//   ${props => 'hello2'}
+//   ${p => p.needsDefault ? 'hello' : 'hello2'}
+// `
+
 const addTagComponent = (classed, tag) => {
   classed[tag] = ClassedFactory(tag)
 }

@@ -1,6 +1,6 @@
 import {createElement} from 'react'
 
-const toResult = props =>
+const realizeValue = props =>
   interpol => typeof interpol === 'function'
   ? interpol(props)
   : interpol
@@ -8,7 +8,7 @@ const toResult = props =>
 const appendClass = results => (classes, string, i) => classes + string + (results[i] || '')
 
 const buildClassName = (strings, interpolations = [], props) => {
-  const realizations        = interpolations.map(toResult(props))
+  const realizations        = interpolations.map(realizeValue(props))
   const reduceToClass       = appendClass(realizations)
   return strings.reduce(reduceToClass, props.className)
 }
