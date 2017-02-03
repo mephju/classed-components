@@ -1,5 +1,18 @@
-import domElements from './utils/domElements';
-import ClassedFactory from './ClassedFactory';
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _domElements = require('./utils/domElements');
+
+var _domElements2 = _interopRequireDefault(_domElements);
+
+var _ClassedFactory = require('./ClassedFactory');
+
+var _ClassedFactory2 = _interopRequireDefault(_ClassedFactory);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // classed.div`
 //   hello ${props => props.needsDefault}
@@ -13,17 +26,17 @@ import ClassedFactory from './ClassedFactory';
 //   yeah
 // `
 
-const addTagComponent = (classed, tag) => {
-  classed[tag] = ClassedFactory(tag);
+var addTagComponent = function addTagComponent(classed, tag) {
+  classed[tag] = (0, _ClassedFactory2.default)(tag);
 };
 
-const Classed = () => {
+var Classed = function Classed() {
 
-  const classed = () => {};
+  var classed = function classed() {};
 
-  domElements.forEach(addTagComponent.bind(null, classed));
+  _domElements2.default.forEach(addTagComponent.bind(null, classed));
 
   return classed;
 };
 
-export default Classed();
+exports.default = Classed();
