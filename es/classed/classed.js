@@ -1,5 +1,6 @@
-import domElements from './utils/domElements';
-import ClassedFactory from './ClassedFactory';
+import domElements from './utils/domElements'
+import ClassedFactory from './ClassedFactory'
+
 
 // classed.div`
 //   hello ${props => props.needsDefault}
@@ -14,16 +15,16 @@ import ClassedFactory from './ClassedFactory';
 // `
 
 const addTagComponent = (classed, tag) => {
-  classed[tag] = ClassedFactory(tag);
-};
+  classed[tag] = ClassedFactory(tag)
+}
 
 const Classed = () => {
 
-  const classed = () => {};
+  const classed = () => {}
 
-  domElements.forEach(addTagComponent.bind(null, classed));
+  domElements.forEach(addTagComponent.bind(null, classed))
 
-  return classed;
-};
+  return classed
+}
 
-export default Classed();
+export default Classed()

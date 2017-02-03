@@ -1,3 +1,3 @@
-import classed from './classed/classed'
+import classed from './classed/classed';
 
-export default classed
+export default classed;
