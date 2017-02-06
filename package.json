@@ -10,7 +10,7 @@
   },
   "email": "mephju@gmail.com",
   "name": "classed-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Like styled-components but for classes. Quickly create components based on CSS classes.",
   "main": "lib/index.js",
   "scripts": {
