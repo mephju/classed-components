@@ -1,15 +1,17 @@
 {
+  "url":"https://github.com/mephju/classed-components",
+  "email":"mephju@gmail.com",
   "name": "classed-components",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Like styled-components but for classes. Quickly create components based on CSS classes.",
   "main": "lib/index.js",
   "scripts": {
 		"test": "jest",
     "build": "babel --out-dir lib src --ignore \"**/*.test.js\"",
     "watch": "babel --watch --out-dir lib src --ignore \"**/*.test.js\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kolja Kirchner",
+  "license": "MIT",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.22.2",
