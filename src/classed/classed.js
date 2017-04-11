@@ -9,7 +9,11 @@ const classed = (ClassedComponent) => {
   return buildTagFunction.withClassedComponent(ClassedComponent)
 }
 
+const addTagFn = (acc, tag) => {
+  acc[tag] = buildTagFunction.withName(tag)
+  return acc
+}
 
-domElements.forEach(tag => classed[tag] = buildTagFunction.withName(tag))
+domElements.reduce(addTagFn, classed)
 
 export default classed

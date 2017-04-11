@@ -9,7 +9,6 @@ node_modules/
 **/node_modules/
 **/node_modules
 .git
-
 logs
 *.log
 pids
@@ -32,7 +31,3 @@ npm-debug.log
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-
-#
-.sass-cache
-

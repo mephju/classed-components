@@ -1,4 +1,4 @@
-import classed from '../classed'
+import classed from '../src'
 import {shallow} from 'enzyme'
 import React from 'react'
 
