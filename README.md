@@ -70,6 +70,19 @@ const Header = classed.div`
 `
 ```
 
+### className prop
+Please note that adding the className prop to a classed component will overwrite its class names.
+
+```javascript
+const Header = classed.div`
+    test-class
+`
+
+...
+// Do not do this:
+<Header className='will-overwrite-test-class' /> 
+```
+
 
 
 

@@ -61,3 +61,17 @@ test('Classed extends classed components', () => {
   expect(className(component2)).toEqual('name1 name2')
 })
 
+
+test('Classed assigns classes via embeddings but ignores undefined and null', () => {
+  const Component1 = classed.div`
+    name1
+    ${'name2'}
+    ${'name3'} ${props => props.undefinedValue}
+    ${undefined}
+    ${null}
+  `
+  const component1 = shallow(<Component1 /> )
+
+  expect(className(component1)).toEqual('name1 name2 name3')
+})
+

@@ -16,4 +16,6 @@ const addTagFn = (acc, tag) => {
 
 domElements.reduce(addTagFn, classed)
 
+
+// classed is a function with properties that are functions as well
 export default classed

@@ -31,7 +31,7 @@ const appendClass = realizations => (classes, className, i) => {
 const buildClassName = (classes, embeddings = [], props) => {
   const realizations = embeddings.map(realizeEmbedding(props))
   const append       = appendClass(realizations)
-  const className    = classes.reduce(append, props.className || '')
+  const className    = classes.reduce(append, '')
   return normalize(className)
 }
 
