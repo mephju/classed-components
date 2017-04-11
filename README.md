@@ -6,6 +6,8 @@ When using CSS Frameworks such as [MaterializeCSS](http://materializecss.com/) i
 
 classed-components helps you do that in a convenient way.
 
+Plus, it just comes at `4.26kB` and has no dependencies!
+
 
 ## How to get started
 ```bash
@@ -78,7 +80,7 @@ const Header = classed.div`
     test-class
 `
 
-...
+// ...
 // Do not do this:
 <Header className='will-overwrite-test-class' /> 
 ```
