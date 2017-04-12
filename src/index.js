@@ -1,1 +1,2 @@
-export default from './classed'
+import classed from './classed'
+export default classed
