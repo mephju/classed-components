@@ -10,11 +10,11 @@
   },
   "email": "mephju@gmail.com",
   "name": "classed-components",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Like styled-components but for classes. Quickly create components based on CSS classes.",
   "main": "lib/main.js",
   "module": "src/index.js",
-  "jsnext:main":"src/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
     "test": "jest",
     "build": "NODE_ENV=production webpack --color --progress",
